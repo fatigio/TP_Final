@@ -47,13 +47,16 @@ const Header = () => {
                 >
                     <ICONS.Settings className="icon"/>
                 </Link>
-                <Link 
+{/*                 <Link 
                     to = {'/contacts/0/profile'} 
                     onClick={() => setActive('/profile')} 
                     className={`link btn_img ${active === '/profile' ? 'activo' : ''}`}
                 >
                     <img src="/images/profile-photo.jpg" alt="profile-photo"/>
-                </Link>
+                </Link> */}
+                <button className="link">
+                    <img src="/images/profile-photo.jpg" alt="profile-photo"/>
+                </button>
             </div>
         </header>
     )
