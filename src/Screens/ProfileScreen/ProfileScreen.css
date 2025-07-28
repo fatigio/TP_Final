@@ -1,0 +1,91 @@
+.header-profile{
+    height: 64px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0a0a0a;
+}
+
+.icon-header{
+    color: #0a0a0a;
+}
+
+.icon-options{
+    color: #646464;
+}
+
+.info-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    border-bottom: #0a0a0a31 3px solid;
+}
+
+.info-contact img{
+    border-radius: 100%;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.contact-name{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #0a0a0a;
+}
+
+.contact-description{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #646464;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.options-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 14px;
+    height: 42px;
+}
+
+.options-buttons-first-span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #0a0a0a;
+    font-family: sans-serif;
+}
+
+.options-buttons-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.options-buttons-second-span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #646464;
+    font-family: sans-serif;
+}

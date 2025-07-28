@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 12px;
+    width: 64px;
+    background-color: #f7f5f3;
+    height: 100%;
+
+}
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 8px;
+    color: #636261;
+    border-radius: 100px;
+    border: none;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.link:hover{
+    background-color: #eae9e7;
+}
+
+.settings-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.settings-profile .btn_img{
+    padding: 6px;
+}
+
+.btn_img img{
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+}
+
+.link.activo {
+    background-color: #eae9e7;
+    color: #0a0a0a;
+}
+

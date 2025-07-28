@@ -1,0 +1,88 @@
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    color: inherit;
+}
+.contact-item:hover{
+    background-color: #f7f5f3;
+    border-radius: 15px;
+}
+
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 0px 13px;
+    height: 72px;
+}
+
+.avatar img {
+    border-radius: 100%;
+    width: 49px;
+    height: 49px;
+    object-fit: cover;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+    gap: 2px;
+}
+
+.name-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.name{
+    font-size: 16px;
+    color: #0a0a0a;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.date{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #666666;
+}
+
+.message-pin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.icon-pin{
+    color: #666666;
+    width: 20px;
+    height: 20px;
+}
+
+.message{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #636262;
+}

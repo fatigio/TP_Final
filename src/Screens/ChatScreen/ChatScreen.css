@@ -1,0 +1,81 @@
+.messages{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header-chat {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border: none;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.167);
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.profile span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0a0a0a;
+    font-family: sans-serif;
+}
+
+.buttons-header-chat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icons-chat{
+    width: 24px;
+    height: 24px;
+    color: #0a0a0a;
+}
+
+.new-message{
+    display: flex;
+    flex-direction: row;
+}
+
+.messages-screen{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.name-conection{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.name-conection .conection{
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #666666;
+}

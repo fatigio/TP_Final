@@ -1,0 +1,137 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1daa61;
+    font-family:  system, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", "Kohinoor Devanagari", sans-serif;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-contact-header{
+    color: #0a0a0a;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0px 20px;
+}
+
+.search-bar{
+    background-color: #f6f5f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 100px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.search-button{
+    background-color: transparent;
+    border: none;
+}
+
+.icon-search{
+    width: 20px;
+    height: 20px;
+    color: #636261;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 90%;
+}
+
+.search-bar input::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #666666;
+}
+
+.search-bar:hover{
+    border: 1px solid #666666;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 7px 20px;
+    gap: 8px;
+    background-color: #ffffff;
+}
+
+.tabs-btns{
+    border: 1px solid #cccccc;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #666666;
+    background-color: transparent;
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tabs-btns:hover{
+    border: 1px solid #aecaa8;
+    background-color: #d9fdd3;
+    color: #15603e;
+}
+
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.archived{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 4px;
+}
+
+.archived button{
+    width: 49px;
+    height: 49px;
+    margin-left: 14px;
+    margin-right: 14px ;
+}
+
+.icon-file{
+    width: 24px;
+    height: 24px;
+    color: #666666;
+}
+
+.archived span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #0a0a0a;
+}
