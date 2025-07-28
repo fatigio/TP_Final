@@ -48,7 +48,7 @@ const Header = () => {
                     <ICONS.Settings className="icon"/>
                 </Link>
                 <Link 
-                    to = {'/contacts/0/profile'} 
+                    to = {'/profile'} 
                     onClick={() => setActive('/profile')} 
                     className={`link btn_img ${active === '/profile' ? 'activo' : ''}`}
                 >
