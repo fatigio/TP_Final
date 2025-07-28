@@ -1,10 +1,27 @@
+:root{
+    --color-principal-0: #ffffff;
+    --color-principal-1: #f7f5f3;
+    --color-principal-2: #f6f5f4;
+    --color-principal-3: #eae9e7;
+    --color-principal-4: #ece5de;
+    --color-principal-5: #d9fdd3;
+    --color-principal-6: #aecaa8;
+    --color-principal-7: #c5c4c3;
+    --color-principal-8: #c6c4c2;
+    --color-principal-9: #666666;
+    --color-principal-10: #007bfc;
+    --color-principal-11: #1daa61;
+    --color-principal-12: #15603e;
+    --color-principal-13: #0a0a0a;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-size: sans-serif;
+    font-family: sans-serif;
 }
 
 .body{

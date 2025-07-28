@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router'
 import { getContactById } from "../../services/contactService"
 import ICONS from "../../constants/icons"
 import "./ProfileScreen.css"
+import '../../index.css'
 
 const ProfileScreen = () => {
     const {contact_id} = useParams()
@@ -11,10 +12,12 @@ const ProfileScreen = () => {
     return (
         <div>
             <header className="header-profile">
-                <Link to={'/contacts/' + contact_id + '/messages'} className="link">
-                    <ICONS.ArrowBack className="icon"/>
-                </Link>
-                <h1 className="title">Info. del contacto</h1>
+                <div className="header-profile-info">
+                    <Link to={'/contacts/' + contact_id + '/messages'} className="link">
+                        <ICONS.ArrowBack className="icon"/>
+                    </Link>
+                    <h1 className="title">Info. del contacto</h1>
+                </div>
                 <button className="link">
                     <ICONS.Pencil className="icon"/>
                 </button>

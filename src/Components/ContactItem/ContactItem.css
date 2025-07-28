@@ -1,4 +1,3 @@
-
 .contact-item{
     display: flex;
     flex-direction: row;
@@ -9,8 +8,9 @@
     overflow: hidden;
     color: inherit;
 }
+
 .contact-item:hover{
-    background-color: #f7f5f3;
+    background-color: var(--color-principal-1);
     border-radius: 15px;
 }
 
@@ -49,16 +49,14 @@
 
 .name{
     font-size: 16px;
-    color: #0a0a0a;
+    color: var(--color-principal-13);
     font-weight: 400;
-    font-family: sans-serif;
 }
 
 .date{
     font-size: 12px;
     font-weight: 400;
-    font-family: sans-serif;
-    color: #666666;
+    color: var(--color-principal-9);
 }
 
 .message-pin{
@@ -75,7 +73,7 @@ button {
 }
 
 .icon-pin{
-    color: #666666;
+    color: var(--color-principal-9);
     width: 20px;
     height: 20px;
 }
@@ -83,6 +81,5 @@ button {
 .message{
     font-weight: 400;
     font-size: 14px;
-    font-family: sans-serif;
-    color: #636262;
+    color: var(--color-principal-9);
 }

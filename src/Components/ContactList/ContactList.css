@@ -3,14 +3,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
 }
+
 
 header h1 {
     font-size: 22px;
     font-weight: 600;
     color: #1daa61;
-    font-family:  system, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", "Kohinoor Devanagari", sans-serif;
 }
 
 .buttons{
@@ -19,7 +19,7 @@ header h1 {
 }
 
 .icon-contact-header{
-    color: #0a0a0a;
+    color: var(--color-principal-13);
 }
 
 .search{
@@ -27,18 +27,18 @@ header h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
     padding: 0px 20px;
 }
 
 .search-bar{
-    background-color: #f6f5f4;
+    background-color: var(--color-principal-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 12px;
     border-radius: 100px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--color-principal-7);
     width: 100%;
 }
 
@@ -59,19 +59,17 @@ header h1 {
     background-color: transparent;
     font-size: 15px;
     font-weight: 400;
-    font-family: sans-serif;
     width: 90%;
 }
 
 .search-bar input::placeholder{
     font-size: 15px;
     font-weight: 400;
-    font-family: sans-serif;
-    color: #666666;
+    color: var(--color-principal-9);
 }
 
 .search-bar:hover{
-    border: 1px solid #666666;
+    border: 1px solid var(--color-principal-9);
 }
 
 .tabs{
@@ -79,17 +77,16 @@ header h1 {
     flex-direction: row;
     padding: 10px 10px 7px 20px;
     gap: 8px;
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
 }
 
 .tabs-btns{
-    border: 1px solid #cccccc;
+    border: 1px solid var(--color-principal-7);
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
-    color: #666666;
+    color: var(--color-principal-9);
     background-color: transparent;
     padding: 6px 12px;
     font-size: 15px;
@@ -97,15 +94,15 @@ header h1 {
 }
 
 .tabs-btns:hover{
-    border: 1px solid #aecaa8;
-    background-color: #d9fdd3;
-    color: #15603e;
+    border: 1px solid var(--color-principal-6);
+    background-color: var(--color-principal-5);
+    color: var(--color-principal-12);
 }
 
 .contact-list{
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
 }
 
 .archived{
@@ -126,12 +123,11 @@ header h1 {
 .icon-file{
     width: 24px;
     height: 24px;
-    color: #666666;
+    color: var(--color-principal-9);
 }
 
 .archived span{
     font-size: 16px;
     font-weight: 400;
-    font-family: sans-serif;
-    color: #0a0a0a;
+    color: var(--color-principal-13);
 }

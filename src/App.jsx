@@ -3,14 +3,14 @@ import ChatScreen from './Screens/ChatScreen/ChatScreen'
 import { Route, Routes, Navigate } from 'react-router'
 import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import './App.css'
-import './index.css'
-import { AppThemeContext } from './Context/AppThemeContext'
 import ChannelScreen from './Screens/ChannelScreen/ChannelScreen'
 import StoryScreen from './Screens/StoryScreen/StoryScreen'
 import CommunityScreen from './Screens/CommunityScreen/CommunityScreen'
 import SettingsScreen from './Screens/SettingsScreen/SettingsScreen'
 import ProfileScreen from './Screens/ProfileScreen/ProfileScreen'
 import PrincipalScreen from './Screens/PrincipalScreen/PrincipalScreen'
+import UserProfileScreen from './Screens/UserProfileScreen/UserProfileScreen'
+import './index.css'
 
 const App = () => {
 
@@ -29,7 +29,7 @@ const App = () => {
         <Route path="channels" element={<ChannelScreen />} />
         <Route path="community" element={<CommunityScreen />} />
         <Route path="settings" element={<SettingsScreen />} />
-        <Route path="profile" element={<ProfileScreen />} />
+        <Route path="profile" element={<UserProfileScreen />} />
       </Route>
     </Routes>
   )

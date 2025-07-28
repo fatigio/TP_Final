@@ -1,0 +1,87 @@
+
+.user-profile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.left-screen{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #ffffff;
+    border-right: 2px solid #cecece;
+}
+
+.right-screen{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #ece5de;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left-screen h1{
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 0px;
+}
+
+.left-screen img{
+    width: 128px;
+    height: 128px;
+    border-radius: 100%;
+}
+
+.profile-info{
+    padding: 14px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-info span{
+    font-weight: 400px;
+    font-size: 15px;
+    color: #666666;
+}
+
+.profile-info-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info-user span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #0a0a0a;
+}
+
+.icon-user-profile{
+    width: 24px;
+    height: 24px;
+    color: #666666;
+}
+
+.profile-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px 28px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+

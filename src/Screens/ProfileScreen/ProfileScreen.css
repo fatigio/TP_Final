@@ -8,6 +8,14 @@
     justify-content: space-between;
 }
 
+.header-profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .title{
     font-family: sans-serif;
     font-weight: 400;

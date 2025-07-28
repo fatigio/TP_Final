@@ -18,6 +18,13 @@
     box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.167);
 }
 
+.profile-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
 .profile{
     display: flex;
     flex-direction: row;

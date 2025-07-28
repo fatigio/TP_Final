@@ -44,7 +44,7 @@ const ChatScreen = () => {
 
     const addNewMessage = (text) => {
         const new_message = {
-            emisor: 'YO',
+            emisor: 'Usuario',
             hora: '11:10',
             texto: text,
             status: 'no-visto',
@@ -60,13 +60,18 @@ const ChatScreen = () => {
     return ( 
         <div className="messages">
             <header className="header-chat">
-                <Link to={'/contacts/' + contact_selected.id + '/profile'} className="profile">
-                    <img src={contact_selected.avatar} alt={contact_selected.name} />
-                    <div className="name-conection">
-                        <span>{contact_selected.name}</span>
-                        <span className="conection">{contact_selected.last_connection}</span>
-                    </div>
-                </Link>
+                <div className="profile-header">
+                    <Link to={'/contacts'} className="link">
+                        <ICONS.ArrowBack className="icon"/>
+                    </Link>
+                    <Link to={'/contacts/' + contact_selected.id + '/profile'} className="profile">
+                        <img src={contact_selected.avatar} alt={contact_selected.name} />
+                        <div className="name-conection">
+                            <span>{contact_selected.name}</span>
+                            <span className="conection">{contact_selected.last_connection}</span>
+                        </div>
+                    </Link>
+                </div>
                 <div className="buttons-header-chat">
                     <button className="link">
                         <ICONS.Video className="icons-chat"/>
