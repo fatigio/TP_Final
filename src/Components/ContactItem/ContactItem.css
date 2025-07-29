@@ -6,7 +6,6 @@
     margin-left: 10px;
     margin-right: 10px;
     overflow: hidden;
-    color: inherit;
 }
 
 .contact-item:hover{
@@ -67,19 +66,38 @@
     width: 100%;
 }
 
-button {
+.message-pin button {
     background-color: transparent;
     border: none;
 }
 
-.icon-pin{
+.message-pin span{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-principal-9);
+}
+
+.icon-pin-contact-item{
     color: var(--color-principal-9);
     width: 20px;
     height: 20px;
 }
 
-.message{
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--color-principal-9);
+@media screen and (max-width: 455px) {
+    .avatar{
+        height: 50px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .date{
+        font-size: 10px;
+    }
+    .message-pin span{
+        font-size: 12px;
+    }
+    .icon-pin-contact-item{
+        width: 15px;
+        height: 15px;
+    }
 }

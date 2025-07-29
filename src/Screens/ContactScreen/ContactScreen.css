@@ -10,8 +10,8 @@
     flex-direction: column;
     height: 100%;
     width: 30%;
-    border-right: 1px solid #e5e5e5;
-    border-left: 2px solid #e5e5e5;
+    border-right: 1px solid var(--color-principal-3);
+    border-left: 2px solid var(--color-principal-3);
 }
 
 .chat-container{
@@ -19,5 +19,39 @@
     flex-direction: column;
     height: 100%;
     width: 70%;
-    background-color: #ece5de;
+    background-color: var(--color-principal-4);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1280px) {
+    .contacts-container{
+        width: 40%;
+    }
+    
+    .chat-container{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 930px) {
+    .contacts-container{
+        width: 100%;
+    }
+    .chat-container{
+        display: none;
+    }
+    .contacts-container.not-active{
+        display: none;
+    }
+    .chat-container.active{
+        display: flex;
+        width: 100%;
+    }
+
+    .chat-container.active .header-main{
+        display: none;
+    }
+
 }

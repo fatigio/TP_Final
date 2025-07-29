@@ -1,50 +1,51 @@
 import React, { useState } from "react";
 import './Header.css'
-import { Link, useLocation, NavLink } from "react-router"
+import { useParams, useLocation, NavLink } from "react-router"
 import ICONS from "../../constants/icons";
 
 const Header = () => {
-/*     const location = useLocation()
-    const [active, setActive] = useState(location.pathname) */
+    const location = useLocation();
+    const {contact_id} = useParams()
+    const hideHeader = location.pathname.includes('/contacts/' + contact_id + '/messages' );
 
     return (
-        <header className="header">
+        <header className={`header ${hideHeader ? 'hide' : ''}`}>
             <div className="top-section">
                 <NavLink 
                     to = {'/contacts'} 
-                    className={({ isActive }) => `link ${isActive ? 'activo' : ''}`}
+                    className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
                 >
-                    <ICONS.Chats className="icon"/>
+                    <ICONS.Chats className="icons-header"/>
                 </NavLink>
                 <NavLink 
                     to = {'/stories'}                      
-                    className={({ isActive }) => `link ${isActive ? 'activo' : ''}`}
+                    className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
                 >
-                    <ICONS.Stories className="icon"/>
+                    <ICONS.Stories className="icons-header"/>
                 </NavLink>
                 <NavLink 
                     to = {'/channels'} 
-                    className={({ isActive }) => `link ${isActive ? 'activo' : ''}`}
+                    className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
                 >
-                    <ICONS.Channels className="icon"/>
+                    <ICONS.Channels className="icons-header"/>
                 </NavLink>
                 <NavLink 
                     to = {'/community'} 
-                    className={({ isActive }) => `link ${isActive ? 'activo' : ''}`}
+                    className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
                 >
-                    <ICONS.Community className="icon"/>
+                    <ICONS.Community className="icons-header"/>
                 </NavLink>
             </div>
             <div className="settings-profile">
                 <NavLink 
                     to = {'/settings'} 
-                    className={({ isActive }) => `link ${isActive ? 'activo' : ''}`}
+                    className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
                 >
-                    <ICONS.Settings className="icon"/>
+                    <ICONS.Settings className="icons-header"/>
                 </NavLink>
                 <NavLink 
                     to = {'/profile'} 
-                    className={({ isActive }) => `link btn_img ${isActive ? 'activo' : ''}`}
+                    className={({ isActive }) => `link btn_img ${isActive ? 'active' : ''}`}
                 >
                     <img src="/images/profile-photo.jpg" alt="profile-photo"/>
                 </NavLink>

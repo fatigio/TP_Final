@@ -27,7 +27,7 @@ const ContactItem = ({ contact }) => {
                     <div  className="message-pin">
                         <span className="message">{last_meessage.texto}</span>
                         <button>
-                            <ICONS.Pin className="icon-pin"/>
+                            <ICONS.Pin className="icon-pin-contact-item"/>
                         </button>
                     </div>
                 </div>

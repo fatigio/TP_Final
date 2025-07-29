@@ -6,7 +6,7 @@
     margin: 0px 12px 12px 12px;
     width: 100%;
     border-radius: 26px;
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.167);
 }
 
@@ -21,7 +21,7 @@
 .icons-new-message{
     width: 24px;
     height: 24px;
-    color: #0a0a0a;
+    color: var(--color-principal-13);
 }
 
 .new-message-form input{
@@ -30,7 +30,6 @@
     background-color: transparent;
     font-size: 15px;
     font-weight: 400;
-    font-family: sans-serif;
     display: flex;
     flex-grow: 1;
     padding-left: 10px;

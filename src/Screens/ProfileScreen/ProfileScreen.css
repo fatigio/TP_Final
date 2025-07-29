@@ -16,19 +16,27 @@
     gap: 10px;
 }
 
+.header-button{
+    border: none;
+    background-color: transparent;
+}
+
 .title{
-    font-family: sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #0a0a0a;
+    color: var(--color-principal-13);
 }
 
 .icon-header{
-    color: #0a0a0a;
+    width: 24px;
+    height: 24px;
+    color: var(--color-principal-13);
 }
 
 .icon-options{
-    color: #646464;
+    width: 24px;
+    height: 24px;
+    color: var(--color-principal-9);
 }
 
 .info-contact{
@@ -38,7 +46,7 @@
     justify-content: center;
     padding: 20px;
     gap: 10px;
-    border-bottom: #0a0a0a31 3px solid;
+    border-bottom: 3px solid var(--color-principal-7);
 }
 
 .info-contact img{
@@ -49,17 +57,15 @@
 }
 
 .contact-name{
-    font-family: sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: #0a0a0a;
+    color: var(--color-principal-13);
 }
 
 .contact-description{
-    font-family: sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #646464;
+    color: var(--color-principal-9);
 }
 
 .options{
@@ -76,13 +82,14 @@
     justify-content: left;
     gap: 14px;
     height: 42px;
+    border: none;
+    background-color: transparent;
 }
 
 .options-buttons-first-span{
     font-size: 15px;
     font-weight: 400;
-    color: #0a0a0a;
-    font-family: sans-serif;
+    color: var(--color-principal-13);
 }
 
 .options-buttons-info{
@@ -94,6 +101,5 @@
 .options-buttons-second-span{
     font-size: 14px;
     font-weight: 400;
-    color: #646464;
-    font-family: sans-serif;
+    color: var(--color-principal-9);
 }

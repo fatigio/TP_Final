@@ -62,12 +62,12 @@ const ChatScreen = () => {
             <header className="header-chat">
                 <div className="profile-header">
                     <Link to={'/contacts'} className="link">
-                        <ICONS.ArrowBack className="icon"/>
+                        <ICONS.ArrowBack className="icons-chat"/>
                     </Link>
                     <Link to={'/contacts/' + contact_selected.id + '/profile'} className="profile">
                         <img src={contact_selected.avatar} alt={contact_selected.name} />
                         <div className="name-conection">
-                            <span>{contact_selected.name}</span>
+                            <span className="name">{contact_selected.name}</span>
                             <span className="conection">{contact_selected.last_connection}</span>
                         </div>
                     </Link>
@@ -91,7 +91,7 @@ const ChatScreen = () => {
                 &&
                 <button onClick={deleteAllMessages}>Borrar todos los mensajes</button>
             } */}
-                <MessagesList className="messages-list" messages = {messages} deletemessageById = {deletemessageById}/>
+                <MessagesList messages = {messages} deletemessageById = {deletemessageById}/>
             </div>
             <div className="new-message">
                 <NewMessageForm addNewMessage = {addNewMessage}/>

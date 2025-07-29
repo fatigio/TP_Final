@@ -9,25 +9,25 @@
     padding: 28px 0px;
 }
 
-.empty-chat-screen_first{
+.empty-chat-screen_first-part{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.empty-chat-screen_second{
+.empty-chat-screen_second-part{
     position: absolute;
     bottom: 40px;
 }
 
-.empty-chat-screen img{
+.empty-chat-screen_first-part img{
     width: 320px;
     height: 213px;
     margin-bottom: 38px;
 }
 
-.empty-chat-screen h1{
+.empty-chat-screen_first-part h1{
     font-size: 36px;
     font-weight: 300;
     color: var(--color-principal-13);
@@ -41,7 +41,7 @@
     margin-bottom: 32px;
 }
 
-.empty-chat-screen button{
+.empty-chat-screen_first-part button{
     font-size: 14px;
     font-weight: 500;
     color: var(--color-principal-0);
@@ -51,7 +51,3 @@
     border: 1px solid var(--color-principal-11);
 }
 
-.cifrado{
-    display: flex;
-    flex-direction: column;
-}

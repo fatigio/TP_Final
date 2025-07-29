@@ -13,9 +13,9 @@
 }
 
 .messages-container {
-    background-color: #d9fdd3;
+    background-color: var(--color-principal-5);
     padding: 6px 7px 8px 9px;
-    max-width: 50%;
+    max-width: 70%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -24,11 +24,11 @@
 }
 
 .received .messages-container {
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
 }
 
 .time{
-    color: #576554;
+    color: var(--color-principal-9);
     font-weight: 400;
     font-size: 11px;
     display: flex;
@@ -36,7 +36,6 @@
 }
 
 .text{
-    font-family: sans-serif;
     font-weight: 400;
     font-size: 15px;
     word-break: break-word;
@@ -53,11 +52,11 @@
 }
 
 .icon-check.seen{
-    color: #007bfc;
+    color: var(--color-principal-10);
 }
 
 .icon-check.not-seen{
-    color: #576554;
+    color: var(--color-principal-9);
 }
 
 .icon-trash{
@@ -68,5 +67,13 @@
 .messages-container button{
     display: flex;
     align-items: end;
+    background-color: transparent;
+    border: none;
 }
 
+@media screen and (max-width: 550px) {
+    .messages-container{
+        max-width: 95%;
+    }
+    
+}

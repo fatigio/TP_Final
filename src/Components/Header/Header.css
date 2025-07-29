@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 10px 12px;
     width: 64px;
-    background-color: #f7f5f3;
+    background-color: var(--color-principal-1);
     height: 100%;
 
 }
@@ -21,18 +21,26 @@
     align-items: center;
     background-color: transparent;
     padding: 8px;
-    color: #636261;
     border-radius: 100px;
     border: none;
 }
 
-.icon{
+.icons-header{
     width: 24px;
     height: 24px;
+    color: var(--color-principal-9);
 }
 
 .link:hover{
-    background-color: #eae9e7;
+    background-color: var(--color-principal-3);
+}
+
+.link.active{
+    background-color:var(--color-principal-3);
+}
+
+.link.active .icons-header{
+    color: var(--color-principal-13);
 }
 
 .settings-profile{
@@ -51,8 +59,29 @@
     border-radius: 100px;
 }
 
-.link.activo {
-    background-color: #eae9e7;
-    color: #0a0a0a;
+
+/* Media queries */
+
+@media screen and (max-width: 930px) {
+    .header.hide{
+        display: none;
+    }
+    
 }
 
+@media screen and (max-width: 455px) {
+    .header{
+        width: 50px;
+    }
+    .link{
+        padding: 5px;
+    }
+    .icons-header{
+        width: 18px;
+        height: 18px;
+    }
+    .btn_img img{
+        width: 25px;
+        height: 25px;
+    }
+}

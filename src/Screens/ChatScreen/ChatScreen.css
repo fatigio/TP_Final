@@ -10,7 +10,7 @@
     flex-direction: row;
     width: 100%;
     height: 64px;
-    background-color: #ffffff;
+    background-color: var(--color-principal-0);
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
@@ -42,8 +42,7 @@
 .profile span {
     font-size: 16px;
     font-weight: 400;
-    color: #0a0a0a;
-    font-family: sans-serif;
+    color: var(--color-principal-13);
 }
 
 .buttons-header-chat{
@@ -57,7 +56,7 @@
 .icons-chat{
     width: 24px;
     height: 24px;
-    color: #0a0a0a;
+    color: var(--color-principal-13);
 }
 
 .new-message{
@@ -78,11 +77,40 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    flex-wrap: wrap;
+}
+
+.name-conection .name{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-principal-13);
 }
 
 .name-conection .conection{
     font-size: 13px;
-    font-family: sans-serif;
     font-weight: 400;
-    color: #666666;
+    color: var(--color-principal-9);
+}
+
+@media screen and (max-width: 550px){
+    .header-chat{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .profile-header{
+        gap: 5px;
+    }
+    .name-conection .name{
+        font-size: 13px;
+    }
+    .name-conection .conection{
+        font-size: 10px;
+    }
+    .buttons-header-chat{
+        gap: 3px;
+    }
+    .icons-chat{
+        width: 18px;
+        height: 18px;
+    }
 }

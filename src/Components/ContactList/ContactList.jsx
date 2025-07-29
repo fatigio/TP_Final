@@ -6,14 +6,14 @@ import ICONS from "../../constants/icons"
 const ContactList = ({ contacts, onContactClick}) => {
     return (
         <div className="c">
-            <header>
+            <header className="header-contact-list">
                 <h1>WhatsApp</h1>
                 <div className="buttons">
                     <button className="link">
-                        <ICONS.NewChat className="icon icon-contact-header"/>
+                        <ICONS.NewChat className="icon-contact-header"/>
                     </button>
                     <button className="link">
-                        <ICONS.ThreeDots className="icon icon-contact-header"/>
+                        <ICONS.ThreeDots className="icon-contact-header"/>
                     </button>
                 </div>
             </header>

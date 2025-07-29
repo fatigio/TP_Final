@@ -1,4 +1,4 @@
-header {
+.header-contact-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@ header {
 }
 
 
-header h1 {
+.header-contact-list h1 {
     font-size: 22px;
     font-weight: 600;
     color: #1daa61;
@@ -20,6 +20,8 @@ header h1 {
 
 .icon-contact-header{
     color: var(--color-principal-13);
+    width: 24px;
+    height: 24px;
 }
 
 .search{
@@ -50,7 +52,7 @@ header h1 {
 .icon-search{
     width: 20px;
     height: 20px;
-    color: #636261;
+    color: var(--color-principal-9);
 }
 
 .search-bar input{
@@ -78,6 +80,7 @@ header h1 {
     padding: 10px 10px 7px 20px;
     gap: 8px;
     background-color: var(--color-principal-0);
+    flex-wrap: wrap;
 }
 
 .tabs-btns{
@@ -91,6 +94,7 @@ header h1 {
     padding: 6px 12px;
     font-size: 15px;
     font-weight: 400;
+    
 }
 
 .tabs-btns:hover{
@@ -103,6 +107,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     background-color: var(--color-principal-0);
+    gap: 10px;
 }
 
 .archived{
@@ -117,7 +122,9 @@ header h1 {
     width: 49px;
     height: 49px;
     margin-left: 14px;
-    margin-right: 14px ;
+    margin-right: 14px;
+    border: none;
+    background-color: transparent;
 }
 
 .icon-file{
@@ -130,4 +137,30 @@ header h1 {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-principal-13);
+}
+
+@media screen and (max-width: 455px){
+    .search-bar input{
+        font-size: 13px;
+    }
+    .search-bar input::placeholder{
+        font-size: 13px;
+    }
+    .search-bar{
+        padding: 5px 10px;
+    }
+    .icon-search{
+        width: 15px;
+        height: 15px;
+    }
+    .tabs-btns{
+        font-size: 13px;
+    }
+    .archived span{
+        font-size: 14px;
+    }
+    .icon-file{
+        width: 20px;
+        height: 20px;
+    }
 }

@@ -13,13 +13,13 @@ const ProfileScreen = () => {
         <div>
             <header className="header-profile">
                 <div className="header-profile-info">
-                    <Link to={'/contacts/' + contact_id + '/messages'} className="link">
-                        <ICONS.ArrowBack className="icon"/>
+                    <Link to={'/contacts/' + contact_id + '/messages'} className="header-button">
+                        <ICONS.ArrowBack className="icon-header"/>
                     </Link>
                     <h1 className="title">Info. del contacto</h1>
                 </div>
-                <button className="link">
-                    <ICONS.Pencil className="icon"/>
+                <button className="header-button">
+                    <ICONS.Pencil className="icon-header"/>
                 </button>
             </header>
             <div className="info-contact">
@@ -29,33 +29,33 @@ const ProfileScreen = () => {
             </div>
                 <div className="options">
                     <button className="options-buttons">
-                        <ICONS.Files className="icon icon-options"/>
+                        <ICONS.Files className="icon-options"/>
                         <span className="options-buttons-first-span">Archivos, enlaces y documentos</span>
                     </button>
                     <button className="options-buttons">
-                        <ICONS.Star className="icon icon-options"/>
+                        <ICONS.Star className="icon-options"/>
                         <span className="options-buttons-first-span">Mensajes destacados</span>
                     </button>
                     <button className="options-buttons">
-                        <ICONS.Bell className="icon icon-options"/>
+                        <ICONS.Bell className="icon-options"/>
                         <span className="options-buttons-first-span">Notificaciones</span>
                     </button>
                     <button className="options-buttons">
-                        <ICONS.Clock className="icon icon-options"/>
+                        <ICONS.Clock className="icon-options"/>
                         <div className="options-buttons-info">
                             <span className="options-buttons-first-span">Mensajes temporales</span>
                             <span className="options-buttons-second-span">Desactivados</span>
                         </div>
                     </button>
                     <button className="options-buttons">
-                        <ICONS.Shield className="icon icon-options"/>
+                        <ICONS.Shield className="icon-options"/>
                         <divc className="options-buttons-info">
                             <span className="options-buttons-first-span">Privacidad avanzada del chat</span>
                             <span className="options-buttons-second-span">Desactivado</span>
                         </divc>
                     </button>
                     <button className="options-buttons">
-                        <ICONS.Lock className="icon icon-options"/>
+                        <ICONS.Lock className="icon-options"/>
                         <div className="options-buttons-info">
                             <span className="options-buttons-first-span">Cifrado</span>
                             <span className="options-buttons-second-span">Los mensajes estan cifrados de extremo a extremo. Haz click para verificarlo.</span>

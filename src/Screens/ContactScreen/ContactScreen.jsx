@@ -4,6 +4,7 @@ import ContactList from "../../Components/ContactList/ContactList";
 import { getContactList } from "../../services/contactService";
 import "./ContactScreen.css"
 import EmptyChat from "../../Components/EmptyChat/EmptyChat";
+import Header from "../../Components/Header/Header";
 
 
 const ContactScreen = () => {
@@ -14,10 +15,10 @@ const ContactScreen = () => {
     
     return (
         <div className="contacts-screen-container">
-            <div className="contacts-container">
+            <div className={`contacts-container ${contact_id ? "not-active" : ""}`}>
                 <ContactList contacts={contactList}/>
             </div>
-            <div className="chat-container">
+            <div className={`chat-container ${contact_id ? "active" : ""}`}>
                 {!contact_id && <EmptyChat />}
                 <Outlet />
             </div>
