@@ -29,7 +29,11 @@ const App = () => {
         <Route path="channels" element={<ChannelScreen />} />
         <Route path="community" element={<CommunityScreen />} />
         <Route path="settings" element={<SettingsScreen />} />
+<<<<<<< HEAD
         <Route path="profile" element={<UserProfileScreen />} />
+=======
+        <Route path="profile" element={<ProfileScreen />} />
+>>>>>>> 5324b0f0885f2c156199adb4d710cf162d78a2d1
       </Route>
     </Routes>
   )
