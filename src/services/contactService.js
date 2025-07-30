@@ -56,8 +56,7 @@ const contacts = [
                 texto: 'Sí, y más con todo lo que pasa por acá.',
                 status: 'visto',
                 id: 7
-            }
-            
+            },      
         ]
     },
     {
