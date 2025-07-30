@@ -4,9 +4,11 @@ import { useParams, useLocation, NavLink } from "react-router"
 import ICONS from "../../constants/icons";
 
 const Header = () => {
-    const location = useLocation();
+    const location = useLocation()
     const {contact_id} = useParams()
-    const hideHeader = location.pathname.includes('/contacts/' + contact_id + '/messages' );
+    const hideHeader = 
+    location.pathname.includes('/contacts/' + contact_id + '/messages') || 
+    location.pathname.includes('/contacts/' + contact_id + '/profile')
 
     return (
         <header className={`header ${hideHeader ? 'hide' : ''}`}>
