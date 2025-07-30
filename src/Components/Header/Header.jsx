@@ -47,7 +47,6 @@ const Header = () => {
                     to = {'/profile'} 
                     className={({ isActive }) => `link btn_img ${isActive ? 'active' : ''}`}
                 >
-                    <ICONS.Settings className="icon"/>
                     <img src="/images/profile-photo.jpg" alt="profile-photo"/>
                 </NavLink>
             </div>
