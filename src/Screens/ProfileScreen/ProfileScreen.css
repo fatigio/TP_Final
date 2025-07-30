@@ -34,6 +34,7 @@
 }
 
 .icon-options{
+    flex-shrink: 0;
     width: 24px;
     height: 24px;
     color: var(--color-principal-9);
@@ -102,4 +103,5 @@
     font-size: 14px;
     font-weight: 400;
     color: var(--color-principal-9);
+    text-align: start;
 }
