@@ -12,7 +12,7 @@
 .top-section{
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
 }
 
 .link{
@@ -46,7 +46,7 @@
 .settings-profile{
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
 }
 
 .settings-profile .btn_img{
@@ -71,14 +71,14 @@
 
 @media screen and (max-width: 455px) {
     .header{
-        width: 50px;
+        width: 56px;
     }
     .link{
         padding: 5px;
     }
     .icons-header{
-        width: 18px;
-        height: 18px;
+        width: 22px;
+        height: 22px;
     }
     .btn_img img{
         width: 25px;

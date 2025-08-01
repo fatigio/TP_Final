@@ -1,16 +1,16 @@
-import React, {useContext, useState} from 'react'
+import React from 'react'
 import ChatScreen from './Screens/ChatScreen/ChatScreen'
 import { Route, Routes, Navigate } from 'react-router'
 import ContactScreen from './Screens/ContactScreen/ContactScreen'
-import './App.css'
 import ChannelScreen from './Screens/ChannelScreen/ChannelScreen'
 import StoryScreen from './Screens/StoryScreen/StoryScreen'
 import CommunityScreen from './Screens/CommunityScreen/CommunityScreen'
 import SettingsScreen from './Screens/SettingsScreen/SettingsScreen'
 import ProfileScreen from './Screens/ProfileScreen/ProfileScreen'
-import PrincipalScreen from './Screens/PrincipalScreen/PrincipalScreen'
 import UserProfileScreen from './Screens/UserProfileScreen/UserProfileScreen'
+import MainScreen from './Screens/MainScreen/MainScreen'
 import './index.css'
+import ContactContextProvider from './Context/ContactContext'
 
 const App = () => {
 
@@ -19,9 +19,15 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Navigate to="/contacts" />} />
 
-      <Route path="/" element={<PrincipalScreen />}>
+      <Route path="/" element={<MainScreen />}>
         <Route path="contacts" element={<ContactScreen />}>
-          <Route path=":contact_id/messages" element={<ChatScreen />}/>
+          <Route 
+            path=":contact_id/messages" 
+            element={
+              <ContactContextProvider>
+                <ChatScreen />
+              </ContactContextProvider>
+            }/>
           <Route path=':contact_id/profile' element={<ProfileScreen />} />
         </Route>
 

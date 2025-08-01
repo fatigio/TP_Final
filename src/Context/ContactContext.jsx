@@ -1,48 +1,73 @@
-/* 
-Para que sirve contexto?
-Nos permite evitar el prop drilling 
-
-Que es el prop drilling?
-Cuando transferimos props a un componente hijo y ese hio se las trasfiere a un componente hijo y asi sucesivamente
-
-*/
-
 import React, {createContext, useEffect, useState} from "react"
 import { useParams } from "react-router"
 import { getContactById } from "../services/contactService"
 
-//Paso 1:
 export const ContactContext = createContext()
 
-//Paso 2: Crear un proveedor
 const ContactContextProvider = ({children}) => {
     
-    //Paso 1: Obtengo el id de contacto
     const {contact_id} = useParams()
 
-    //Paso 2: Creo un estado donde guardo el contexto seleccionado
     const [contact_info, setContactInfo] = useState(null)
 
-    //Nos permite controlar la cantidad de recarga de una funcion
-    //Recibe dos parametros
-    //1: El efecto: la funcion que queremos controlar
-    //2: Las dependencias: Los estados que mi efecto escuchara para re-llamar al efecto
     useEffect(() => {
-        //Paso 3: Busco el contacto seleccionado
-        const contact_selected = getContactById(contact_id)
+        setContactInfo(null)
+        setTimeout(
+            () => {
+                const contact_selected = getContactById(contact_id)
 
-        //Paso 4: Guardo mi estado de contacto seleccionado
-        setContactInfo(contact_selected)
+                setContactInfo(contact_selected)
+            },
+            1000
+        )
     },
-    //Quiero que se recargue el efecto si mi id de contacto cambia 
     [contact_id])
+
+    const deletemessageById = (message_id) => {
+        
+        const new_message_list = []
+
+        for(const message of contact_info.messages){
+            if(message.id !== message_id){
+                new_message_list.push(message)
+            }
+        }
+        setContactInfo(
+            {...contact_info, messages: new_message_list}
+        )
+    }
+
+    const deleteAllMessages = () => {
+        setContactInfo({...contact_info, messages: []})
+    }
+
+    const addNewMessage = (text) => {
+        
+        const new_message = {
+            emisor: 'Usuario',
+            hora: '11:10',
+            texto: text,
+            status: 'no-visto',
+            id: contact_info.messages.length + 1
+        }
+        
+        const cloned_messages_list = [...contact_info.messages]
+
+        cloned_messages_list.push(new_message)
+        
+        setContactInfo(
+            {...contact_info, messages: cloned_messages_list}
+        )
+    }
 
 
     return (
         <ContactContext.Provider value={
-            //Este objeto es el valor que podran acceder de nuestro contexto
             {
-                contact_info: contact_info
+                contact_info: contact_info,
+                deleteAllMessages: deleteAllMessages,
+                deletemessageById: deletemessageById,
+                addNewMessage: addNewMessage
             }
         }>
             {children}

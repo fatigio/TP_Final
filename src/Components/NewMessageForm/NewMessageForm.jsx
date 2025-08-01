@@ -1,14 +1,14 @@
-import React from "react"
+import React, { useContext } from "react"
+import { ContactContext } from "../../Context/ContactContext"
 import ICONS from "../../constants/icons"
 import "./NewMessageForm.css"
 
-const NewMessageForm = ({addNewMessage}) => {
+const NewMessageForm = () => {
+    const {addNewMessage} = useContext(ContactContext)
     const handleSubmitSendMessageForm = (event) => {
         event.preventDefault()
         let new_message_text = event.target.message.value
-        //Llamamos a la funcion de agregar nuevo mensaje
         addNewMessage(new_message_text)
-        //Reseteamos el campo
         event.target.message.value = ''
     }
     return (

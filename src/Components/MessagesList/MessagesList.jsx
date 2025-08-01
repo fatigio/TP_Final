@@ -1,11 +1,17 @@
 import Messages from "../Messages/Messages"
+import { useContext } from "react"
 import "./MessagesList.css"
+import { ContactContext } from "../../Context/ContactContext"
 
-const MessagesList = ({messages, deletemessageById}) => {
 
-    //Esto se un ejemplo de renderizado condicional
-    //Tarea para investigar, esto se puede hacer con algo llamado ternario
-    if(messages.length === 0){
+const MessagesList = () => {
+    const {contact_info} = useContext(ContactContext)
+
+    if (!contact_info) {
+        return <span>Cargando mensajes...</span>
+    }
+
+    if(contact_info.messages.length === 0){
         return (
             <div>
                 <span>No hay mensajes</span>
@@ -15,7 +21,7 @@ const MessagesList = ({messages, deletemessageById}) => {
 
     const list_messages = (
         <div className="messages-list">
-            {messages.map((message) =>(
+            {contact_info.messages.map((message) =>(
                         <Messages 
                             key = {message.id}
                             emisor = {message.emisor}
@@ -23,7 +29,6 @@ const MessagesList = ({messages, deletemessageById}) => {
                             id = {message.id}
                             texto = {message.texto}
                             status = {message.status}
-                            deletemessageById = {deletemessageById}
                         />
                     )
                 )

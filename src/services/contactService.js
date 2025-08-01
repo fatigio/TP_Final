@@ -341,6 +341,73 @@ const contacts = [
                 id: 4
             }
         ]
+    },
+    {
+        id: 8,
+        name: 'Albus Dumbledore',
+        description: 'El tiempo es un amigo para quien sabe escuchar.',
+        avatar: '/images/albus-dumbledore.jpg',
+        last_connection: 'En línea',
+        connection_status: 'online',
+        last_message_time: '22:05',
+        messages: [
+            {
+                emisor: 'Usuario',
+                hora: '7:15',
+                texto: 'Buenos días, profesor Dumbledore. ¿Lo desperté muy temprano?',
+                status: 'visto',
+                id: 1
+            },
+            {
+                emisor: 'Albus Dumbledore',
+                hora: '7:16',
+                texto: 'Buenos días. No, ya estaba despierto, me gusta disfrutar la tranquilidad de la mañana en el castillo.',
+                status: 'visto',
+                id: 2
+            },
+            {
+                emisor: 'Usuario',
+                hora: '7:17',
+                texto: 'Debe ser muy lindo ver amanecer desde su oficina.',
+                status: 'visto',
+                id: 3
+            },
+            {
+                emisor: 'Albus Dumbledore',
+                hora: '7:18',
+                texto: 'Es uno de mis momentos favoritos. El sol iluminando las torres de Hogwarts tiene algo… mágico.',
+                status: 'visto',
+                id: 4
+            },
+            {
+                emisor: 'Usuario',
+                hora: '7:19',
+                texto: '¿Y tiene algún plan para hoy?',
+                status: 'visto',
+                id: 5
+            },
+            {
+                emisor: 'Albus Dumbledore',
+                hora: '7:21',
+                texto: 'Un par de reuniones con los profesores y después dedicaré tiempo a la biblioteca. Siempre hay algo nuevo que aprender.',
+                status: 'visto',
+                id: 6
+            },
+            {
+                emisor: 'Usuario',
+                hora: '7:22',
+                texto: 'Eso suena muy relajante.',
+                status: 'visto',
+                id: 7
+            },
+            {
+                emisor: 'Albus Dumbledore',
+                hora: '7:23',
+                texto: 'La calma siempre es buena compañera antes de que llegue la aventura.',
+                status: 'visto',
+                id: 8
+            }
+        ]
     }
 ]
 

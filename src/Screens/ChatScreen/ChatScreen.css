@@ -34,8 +34,8 @@
 
 .profile img{
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 49px;
+    height: 49px;
     object-fit: cover;
 }
 
@@ -94,17 +94,17 @@
 
 @media screen and (max-width: 550px){
     .header-chat{
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
     .profile-header{
         gap: 5px;
     }
     .name-conection .name{
-        font-size: 13px;
+        font-size: 14px;
     }
     .name-conection .conection{
-        font-size: 10px;
+        font-size: 11px;
     }
     .buttons-header-chat{
         gap: 3px;

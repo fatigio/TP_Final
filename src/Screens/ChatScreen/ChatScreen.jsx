@@ -86,11 +86,6 @@ const ChatScreen = () => {
                 </div>
             </header>
             <div className="messages-screen">
-{/*             {
-                messages.length > 0
-                &&
-                <button onClick={deleteAllMessages}>Borrar todos los mensajes</button>
-            } */}
                 <MessagesList messages = {messages} deletemessageById = {deletemessageById}/>
             </div>
             <div className="new-message">

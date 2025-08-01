@@ -1,15 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import "./Messages.css"
 import ICONS from "../../constants/icons"
+import { ContactContext } from "../../Context/ContactContext"
 
-const Messages = ({emisor, hora, id, texto, status, deletemessageById}) => {
-
-    /* Cuando  necesito pasar un parametro a una funcion asociada a un evento, podemos encerrarlo en otra funcion, de esta manera evitamos que se ejecute al renderizarse el componente 
-    Ejemplo incorrecto:
-    <button onClick = {alert('hola')}></button> => Apenas se cargue el boton se ejecutara la alerta
-    Ejemplo correcto:
-    <button onClick = {() => {alert('hola')}}></button> => La funcion solo se ejecutara al dar click
-    */
+const Messages = ({emisor, hora, id, texto, status}) => {
+    const {deletemessageById} = useContext(ContactContext)
 
     return (
         <div className={`messages-wrapper ${emisor === "Usuario" ? "sent" : "received"}`}>
