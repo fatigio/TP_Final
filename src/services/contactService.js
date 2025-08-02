@@ -403,7 +403,7 @@ const contacts = [
             {
                 emisor: 'Albus Dumbledore',
                 hora: '7:23',
-                texto: 'La calma siempre es buena compañera antes de que llegue la aventura.',
+                texto: 'La calma siempre es una buena compañera.',
                 status: 'visto',
                 id: 8
             }

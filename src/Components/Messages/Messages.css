@@ -70,6 +70,7 @@
 .icon-trash{
     width: 14px;
     height: 14px;
+    color: var(--color-principal-9);
 }
 
 .messages-container button{
