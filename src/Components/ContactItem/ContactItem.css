@@ -84,8 +84,9 @@
 }
 
 @media screen and (max-width: 455px) {
-    .avatar{
+    .avatar img{
         height: 50px;
+        width: 50px;
     }
     .name{
         font-size: 14px;
