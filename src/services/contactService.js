@@ -23,39 +23,32 @@ const contacts = [
                 id: 2
             },
             {
-                emisor: 'Harry',
-                hora: '9:16',
-                texto: 'Las cosas en Hogwarts suelen ser complicadas, pero trato de llevarlo tranquilo.',
-                status: 'visto',
-                id: 3
-            },
-            {
                 emisor: 'Usuario',
                 hora: '9:17',
                 texto: '¿Y qué hacés cuando no estás en clase?',
                 status: 'visto',
-                id: 4
+                id: 3
             },
             {
                 emisor: 'Harry',
                 hora: '9:18',
                 texto: 'Suelo practicar un poco de Quidditch o pasar tiempo con Ron y Hermione. Es bueno desconectarse un rato.',
                 status: 'visto',
-                id: 5
+                id: 4
             },
             {
                 emisor: 'Usuario',
                 hora: '9:20',
                 texto: 'Suena bien, un poco de descanso ayuda siempre.',
                 status: 'visto',
-                id: 6
+                id: 5
             },
             {
                 emisor: 'Harry',
                 hora: '9:21',
                 texto: 'Sí, y más con todo lo que pasa por acá.',
                 status: 'visto',
-                id: 7
+                id: 6
             }
         ]
     },
@@ -290,7 +283,7 @@ const contacts = [
             {
                 emisor: 'Luna',
                 hora: '10:14',
-                texto: 'Sí, me gusta pasar tiempo así, en silencio y atento a los detalles.',
+                texto: 'Sí, me gusta pasar tiempo así, en silencio y atenta a los detalles.',
                 status: 'visto',
                 id: 4
             },
