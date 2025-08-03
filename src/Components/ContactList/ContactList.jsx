@@ -5,7 +5,7 @@ import ICONS from "../../constants/icons"
 
 const ContactList = ({ contacts, onContactClick}) => {
     return (
-        <div className="c">
+        <div className="contact-list-container">
             <header className="header-contact-list">
                 <h1>WhatsApp</h1>
                 <div className="buttons">
@@ -17,7 +17,7 @@ const ContactList = ({ contacts, onContactClick}) => {
                     </button>
                 </div>
             </header>
-            <div className="search">
+            <div className="search-container">
                 <div className="search-bar">
                     <button className="search-button">
                         <ICONS.Search className="icon-search"/>

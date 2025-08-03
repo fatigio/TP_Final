@@ -17,15 +17,7 @@ const ChatScreen = () => {
         const contact_selected = getContactById(contact_id)
         setMessages(contact_selected.messages)
     }, [contact_id])
-
-/*     useEffect(() => {
-        // Código que querés que se ejecute
-    }, [dependencias])
     
-    El primer parámetro es una función que se ejecuta cuando el componente se renderiza o cuando cambian las dependencias.
-    El segundo parámetro (el array de dependencias) le dice a React cuándo ejecutar esa función. 
-    
-    Lo que esta dentro de las llaves se ejecutara cuando el contact_id cambie */
     const deletemessageById = (message_id) => {
         
         const new_message_list = []

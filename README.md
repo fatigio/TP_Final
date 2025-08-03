@@ -1,6 +1,6 @@
 ## WhatsApp Clone
 
-Es una aplicacion que simula un chat de WhatsApp
+Es una aplicación que simula un chat de WhatsApp.
 
 ## Tecnologias usadas
 
@@ -10,4 +10,6 @@ Es una aplicacion que simula un chat de WhatsApp
 
 ## Aprendizaje
 
-(Me costo mucho implementar el hook useParams() de React Router)
+Me costó en un principio distinguir si lo que quería realizar debía ser una screen o un componente reutilizable.
+También tuve dificultades para entender cómo implementar los contextos, así como los hooks useParams y useState.
+Por suerte, con las clases y la práctica logré comprender cada uno de estos aspectos que se me dificultaban.

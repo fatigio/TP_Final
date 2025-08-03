@@ -5,13 +5,6 @@
     overflow-y: auto;
 }
 
-.messages-wrapper::-webkit-scrollbar{
-    width: 5px;
-    background-color: var(--color-principal-8);
-    border-radius: 4px;
-    border: 1px solid var(--color-principal-8); 
-}
-
 .sent {
     justify-content: flex-end;
 }
@@ -84,5 +77,4 @@
     .messages-container{
         max-width: 95%;
     }
-    
 }

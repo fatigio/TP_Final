@@ -1,7 +1,6 @@
 import React from "react";
 import ICONS from "../../constants/icons";
 import "../Screens.css"
-import '../../index.css'
 
 const SettingsScreen = () => {
     return (

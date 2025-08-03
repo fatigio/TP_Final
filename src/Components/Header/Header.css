@@ -6,7 +6,6 @@
     width: 64px;
     background-color: var(--color-principal-1);
     height: 100%;
-
 }
 
 .top-section{
@@ -25,12 +24,6 @@
     border: none;
 }
 
-.icons-header{
-    width: 24px;
-    height: 24px;
-    color: var(--color-principal-9);
-}
-
 .link:hover{
     background-color: var(--color-principal-3);
 }
@@ -41,6 +34,12 @@
 
 .link.active .icons-header{
     color: var(--color-principal-13);
+}
+
+.icons-header{
+    width: 24px;
+    height: 24px;
+    color: var(--color-principal-9);
 }
 
 .settings-profile{
@@ -66,7 +65,6 @@
     .header.hide{
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 455px) {

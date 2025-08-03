@@ -25,7 +25,7 @@
 }
 
 .left-screen h1{
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-weight: 400;
     font-size: 20px;
 }
@@ -56,7 +56,7 @@
     color: var(--color-principal-9);
 }
 
-.profile-info-user{
+.profile-info-edit{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

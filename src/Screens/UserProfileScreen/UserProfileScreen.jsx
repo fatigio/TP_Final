@@ -1,6 +1,7 @@
 import React from "react"
 import ICONS from "../../constants/icons"
 import './UserProfileScreen.css'
+import "../Screens.css"
 
 const UserProfileScreen = () => {
     return (
@@ -12,7 +13,7 @@ const UserProfileScreen = () => {
                 </div>
                 <div className="profile-info">
                     <span>Tu nombre</span>
-                    <div className="profile-info-user">
+                    <div className="profile-info-edit">
                         <span>Usuario</span>
                         <button className="link">
                             <ICONS.Pencil className="icon-user-profile"/>
@@ -22,7 +23,7 @@ const UserProfileScreen = () => {
                 <span className="profile-description">Este no es tu nombre de usuario o PIN. Este nombre será visible para tus contactos de WhatsApp.</span>
                 <div className="profile-info">
                     <span>Info.</span>
-                    <div className="profile-info-user">
+                    <div className="profile-info-edit">
                         <span>Estado</span>
                         <button className="link">
                             <ICONS.Pencil className="icon-user-profile"/>

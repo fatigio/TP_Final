@@ -1,4 +1,4 @@
-.header-profile{
+.header-contact-profile{
     height: 64px;
     width: 100%;
     padding: 10px;
@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 
-.header-profile-info{
+.header-contact-profile-info{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,7 +21,7 @@
     background-color: transparent;
 }
 
-.title{
+.contact-profile-title{
     font-weight: 400;
     font-size: 18px;
     color: var(--color-principal-13);
@@ -40,7 +40,7 @@
     color: var(--color-principal-9);
 }
 
-.info-contact{
+.contact-profile-info{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@
     border-bottom: 3px solid var(--color-principal-7);
 }
 
-.info-contact img{
+.contact-profile-info img{
     border-radius: 100%;
     width: 128px;
     height: 128px;
