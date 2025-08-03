@@ -9,7 +9,7 @@ const ProfileScreen = () => {
     const contact_selected = getContactById(contact_id)
 
     return (
-        <div>
+        <div className="contact-profile">
             <header className="header-contact-profile">
                 <div className="header-contact-profile-info">
                     <Link to={'/contacts/' + contact_id + '/messages'} className="header-button">
